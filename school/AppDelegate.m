@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "SFTabBarController.h"
+#import "SFAppManager.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +23,10 @@
     UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [window setBackgroundColor:[UIColor whiteColor]];
     [self setWindow:window];
-    [[self window] makeKeyAndVisible];
+    [[self window] makeKeyWindow];
+    
+    //用于配置具体的root控制器
+    [SFAppManager setup];
     return YES;
 }
 

@@ -10,7 +10,7 @@
 
 @interface SFUser : NSObject<NSCoding, NSCopying>
 
-@property(nonatomic, copy) NSString *user_id;
+@property(nonatomic, copy) NSNumber *user_id;
 @property(nonatomic, copy) NSNumber *is_auto_login;
 @property(nonatomic, copy) NSString *nickname;
 @property(nonatomic, copy) NSString *phone;

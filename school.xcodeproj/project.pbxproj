@@ -37,6 +37,9 @@
 		A67EED31210AEF200033B250 /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED30210AEF200033B250 /* SFHomeViewController.m */; };
 		A67EED34210AEF2B0033B250 /* SFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED33210AEF2B0033B250 /* SFMineViewController.m */; };
 		A67EED37210AF1350033B250 /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED36210AF1350033B250 /* SFNavigationController.m */; };
+		A67EED3B210AF2460033B250 /* SFAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED3A210AF2460033B250 /* SFAppManager.m */; };
+		A67EED40210AF4010033B250 /* SFCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED3F210AF4010033B250 /* SFCommon.m */; };
+		A67EED43210AF4500033B250 /* SFPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED42210AF4500033B250 /* SFPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,12 @@
 		A67EED33210AEF2B0033B250 /* SFMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMineViewController.m; sourceTree = "<group>"; };
 		A67EED35210AF1350033B250 /* SFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
 		A67EED36210AF1350033B250 /* SFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
+		A67EED39210AF2460033B250 /* SFAppManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFAppManager.h; sourceTree = "<group>"; };
+		A67EED3A210AF2460033B250 /* SFAppManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFAppManager.m; sourceTree = "<group>"; };
+		A67EED3E210AF4010033B250 /* SFCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFCommon.h; sourceTree = "<group>"; };
+		A67EED3F210AF4010033B250 /* SFCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFCommon.m; sourceTree = "<group>"; };
+		A67EED41210AF4500033B250 /* SFPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPath.h; sourceTree = "<group>"; };
+		A67EED42210AF4500033B250 /* SFPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +197,7 @@
 		A67EECAE210ACF9D0033B250 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				A67EED3D210AF3F10033B250 /* Common */,
 				A67EED17210AEB540033B250 /* Main */,
 				A67EED13210ADCD60033B250 /* User */,
 				A67EED02210ADBD50033B250 /* Localization */,
@@ -300,6 +310,7 @@
 		A67EED17210AEB540033B250 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				A67EED38210AF2310033B250 /* Manager */,
 				A67EED2D210AEEEF0033B250 /* App */,
 				A67EED29210AEDCB0033B250 /* Root */,
 				A67EED1F210AEBB80033B250 /* Common */,
@@ -360,6 +371,26 @@
 				A67EED33210AEF2B0033B250 /* SFMineViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		A67EED38210AF2310033B250 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED39210AF2460033B250 /* SFAppManager.h */,
+				A67EED3A210AF2460033B250 /* SFAppManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		A67EED3D210AF3F10033B250 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED3E210AF4010033B250 /* SFCommon.h */,
+				A67EED3F210AF4010033B250 /* SFCommon.m */,
+				A67EED41210AF4500033B250 /* SFPath.h */,
+				A67EED42210AF4500033B250 /* SFPath.m */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -577,6 +608,8 @@
 				A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */,
 				A67EECBF210ACF9F0033B250 /* main.m in Sources */,
 				A67EECEB210AD37E0033B250 /* AppDelegate+SFNotify.m in Sources */,
+				A67EED40210AF4010033B250 /* SFCommon.m in Sources */,
+				A67EED3B210AF2460033B250 /* SFAppManager.m in Sources */,
 				A67EED28210AEC180033B250 /* SFBarButtonItem.m in Sources */,
 				A67EED1E210AEB880033B250 /* SFBaseNavigationController.m in Sources */,
 				A67EED22210AEBCB0033B250 /* SFTableView.m in Sources */,
@@ -587,6 +620,7 @@
 				A67EED37210AF1350033B250 /* SFNavigationController.m in Sources */,
 				A67EED2C210AEDEB0033B250 /* SFTabBarController.m in Sources */,
 				A67EECF9210AD7470033B250 /* SFHttpService.m in Sources */,
+				A67EED43210AF4500033B250 /* SFPath.m in Sources */,
 				A67EED12210ADC680033B250 /* FFLocalization.m in Sources */,
 				A67EECF6210AD5390033B250 /* SFHttpBaseService.m in Sources */,
 				A67EECB1210ACF9D0033B250 /* AppDelegate.m in Sources */,

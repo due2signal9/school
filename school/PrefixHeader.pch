@@ -40,5 +40,6 @@
 #import "AppDelegate+SFRegister.h"
 #import "AppDelegate+SFSetup.h"
 #import <YYKit.h>
+#import "SFUser.h"
 
 #endif /* PrefixHeader_pch */
