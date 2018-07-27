@@ -40,6 +40,7 @@
 		A67EED3B210AF2460033B250 /* SFAppManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED3A210AF2460033B250 /* SFAppManager.m */; };
 		A67EED40210AF4010033B250 /* SFCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED3F210AF4010033B250 /* SFCommon.m */; };
 		A67EED43210AF4500033B250 /* SFPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED42210AF4500033B250 /* SFPath.m */; };
+		A67EED46210AF8290033B250 /* FFNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED45210AF8290033B250 /* FFNotice.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,8 @@
 		A67EED3F210AF4010033B250 /* SFCommon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFCommon.m; sourceTree = "<group>"; };
 		A67EED41210AF4500033B250 /* SFPath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFPath.h; sourceTree = "<group>"; };
 		A67EED42210AF4500033B250 /* SFPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPath.m; sourceTree = "<group>"; };
+		A67EED44210AF8290033B250 /* FFNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFNotice.h; sourceTree = "<group>"; };
+		A67EED45210AF8290033B250 /* FFNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFNotice.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +392,8 @@
 				A67EED3F210AF4010033B250 /* SFCommon.m */,
 				A67EED41210AF4500033B250 /* SFPath.h */,
 				A67EED42210AF4500033B250 /* SFPath.m */,
+				A67EED44210AF8290033B250 /* FFNotice.h */,
+				A67EED45210AF8290033B250 /* FFNotice.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -606,6 +611,7 @@
 				A67EED1B210AEB740033B250 /* SFBaseViewController.m in Sources */,
 				A67EECF3210AD4E70033B250 /* SFHttp.m in Sources */,
 				A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */,
+				A67EED46210AF8290033B250 /* FFNotice.m in Sources */,
 				A67EECBF210ACF9F0033B250 /* main.m in Sources */,
 				A67EECEB210AD37E0033B250 /* AppDelegate+SFNotify.m in Sources */,
 				A67EED40210AF4010033B250 /* SFCommon.m in Sources */,
