@@ -36,6 +36,7 @@
 		A67EED2C210AEDEB0033B250 /* SFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED2B210AEDEB0033B250 /* SFTabBarController.m */; };
 		A67EED31210AEF200033B250 /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED30210AEF200033B250 /* SFHomeViewController.m */; };
 		A67EED34210AEF2B0033B250 /* SFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED33210AEF2B0033B250 /* SFMineViewController.m */; };
+		A67EED37210AF1350033B250 /* SFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED36210AF1350033B250 /* SFNavigationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,8 @@
 		A67EED30210AEF200033B250 /* SFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHomeViewController.m; sourceTree = "<group>"; };
 		A67EED32210AEF2B0033B250 /* SFMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMineViewController.h; sourceTree = "<group>"; };
 		A67EED33210AEF2B0033B250 /* SFMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMineViewController.m; sourceTree = "<group>"; };
+		A67EED35210AF1350033B250 /* SFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNavigationController.h; sourceTree = "<group>"; };
+		A67EED36210AF1350033B250 /* SFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNavigationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +337,8 @@
 			children = (
 				A67EED2A210AEDEB0033B250 /* SFTabBarController.h */,
 				A67EED2B210AEDEB0033B250 /* SFTabBarController.m */,
+				A67EED35210AF1350033B250 /* SFNavigationController.h */,
+				A67EED36210AF1350033B250 /* SFNavigationController.m */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -579,6 +584,7 @@
 				A67EED16210ADCE70033B250 /* SFUser.m in Sources */,
 				A67EED31210AEF200033B250 /* SFHomeViewController.m in Sources */,
 				A67EED34210AEF2B0033B250 /* SFMineViewController.m in Sources */,
+				A67EED37210AF1350033B250 /* SFNavigationController.m in Sources */,
 				A67EED2C210AEDEB0033B250 /* SFTabBarController.m in Sources */,
 				A67EECF9210AD7470033B250 /* SFHttpService.m in Sources */,
 				A67EED12210ADC680033B250 /* FFLocalization.m in Sources */,
