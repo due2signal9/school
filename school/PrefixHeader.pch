@@ -1,0 +1,44 @@
+//
+//  PrefixHeader.pch
+//  school
+//
+//  Created by Oliver Mac on 2018/7/27.
+//  Copyright © 2018年 rl. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//开发临时用
+#define IS_DEV_SERVER 1
+
+//一些宏定义
+#define SFWeakSelf(ws)  __weak __typeof(&*self)ws = self;
+#define SFStrongSelf(ws)  __strong __typeof(&*self)ws = self;
+#define SFLocalizedString(key) [SFLocalization localizedStringWithKey: (key)]
+
+#define SF_HW_RATIO (667.0/375.0)
+
+//RELATIVE ABSOLUTE 用于区分横屏下的绝对长宽
+#define SF_RELATIVE_SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SF_RELATIVE_SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+#define SF_ABSOLUTE_SCREEN_WIDTH (SF_RELATIVE_SCREEN_WIDTH < SF_RELATIVE_SCREEN_HEIGHT ? SF_RELATIVE_SCREEN_WIDTH : SF_RELATIVE_SCREEN_HEIGHT)
+#define SF_ABSOLUTE_SCREEN_HEIGHT (SF_RELATIVE_SCREEN_WIDTH > SF_RELATIVE_SCREEN_HEIGHT ? SF_RELATIVE_SCREEN_WIDTH : SF_RELATIVE_SCREEN_HEIGHT)
+
+//判断设备
+#define SF_IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define SF_IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+//判断真机或模拟器
+#if (TARGET_IPHONE_SIMULATOR) //模拟器
+#define SF_IS_SIMULATOR 1
+#else //真机
+#define SF_IS_SIMULATOR 0
+#endif
+
+#import "AppDelegate+SFRegister.h"
+#import "AppDelegate+SFSetup.h"
+#import <YYKit.h>
+
+#endif /* PrefixHeader_pch */

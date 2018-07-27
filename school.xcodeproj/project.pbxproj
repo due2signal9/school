@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83BA314EFD4E4D4449DD4927 /* libPods-school.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 027B7F1D319B1693B16520AF /* libPods-school.a */; };
 		A67EECB1210ACF9D0033B250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECB0210ACF9D0033B250 /* AppDelegate.m */; };
-		A67EECB4210ACF9D0033B250 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECB3210ACF9D0033B250 /* ViewController.m */; };
-		A67EECB7210ACF9D0033B250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67EECB5210ACF9D0033B250 /* Main.storyboard */; };
 		A67EECB9210ACF9F0033B250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67EECB8210ACF9F0033B250 /* Assets.xcassets */; };
 		A67EECBC210ACF9F0033B250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67EECBA210ACF9F0033B250 /* LaunchScreen.storyboard */; };
 		A67EECBF210ACF9F0033B250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECBE210ACF9F0033B250 /* main.m */; };
 		A67EECC9210ACF9F0033B250 /* schoolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECC8210ACF9F0033B250 /* schoolTests.m */; };
 		A67EECD4210ACF9F0033B250 /* schoolUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECD3210ACF9F0033B250 /* schoolUITests.m */; };
+		A67EECE5210AD35F0033B250 /* AppDelegate+SFRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECE4210AD35F0033B250 /* AppDelegate+SFRegister.m */; };
+		A67EECE8210AD36A0033B250 /* AppDelegate+SFSetup.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECE7210AD36A0033B250 /* AppDelegate+SFSetup.m */; };
+		A67EECEB210AD37E0033B250 /* AppDelegate+SFNotify.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECEA210AD37E0033B250 /* AppDelegate+SFNotify.m */; };
+		A67EECF3210AD4E70033B250 /* SFHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECF2210AD4E70033B250 /* SFHttp.m */; };
+		A67EECF6210AD5390033B250 /* SFHttpBaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECF5210AD5390033B250 /* SFHttpBaseService.m */; };
+		A67EECF9210AD7470033B250 /* SFHttpService.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECF8210AD7470033B250 /* SFHttpService.m */; };
+		A67EECFC210AD94A0033B250 /* server-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A67EECFB210AD94A0033B250 /* server-info.plist */; };
+		A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECFE210AD9BD0033B250 /* SFServer.m */; };
+		A67EED01210ADAAE0033B250 /* CHECK_ME in Resources */ = {isa = PBXBuildFile; fileRef = A67EED00210ADAAE0033B250 /* CHECK_ME */; };
+		A67EED05210ADBF80033B250 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67EED04210ADBF80033B250 /* en.strings */; };
+		A67EED07210ADC080033B250 /* zh-Hans.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67EED06210ADC080033B250 /* zh-Hans.strings */; };
+		A67EED0C210ADC440033B250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67EED0E210ADC440033B250 /* InfoPlist.strings */; };
+		A67EED12210ADC680033B250 /* FFLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED11210ADC680033B250 /* FFLocalization.m */; };
+		A67EED16210ADCE70033B250 /* SFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED15210ADCE70033B250 /* SFUser.m */; };
+		A67EED1B210AEB740033B250 /* SFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED1A210AEB740033B250 /* SFBaseViewController.m */; };
+		A67EED1E210AEB880033B250 /* SFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED1D210AEB880033B250 /* SFBaseNavigationController.m */; };
+		A67EED22210AEBCB0033B250 /* SFTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED21210AEBCB0033B250 /* SFTableView.m */; };
+		A67EED25210AEBE60033B250 /* SFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED24210AEBE60033B250 /* SFTableViewCell.m */; };
+		A67EED28210AEC180033B250 /* SFBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED27210AEC180033B250 /* SFBarButtonItem.m */; };
+		A67EED2C210AEDEB0033B250 /* SFTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED2B210AEDEB0033B250 /* SFTabBarController.m */; };
+		A67EED31210AEF200033B250 /* SFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED30210AEF200033B250 /* SFHomeViewController.m */; };
+		A67EED34210AEF2B0033B250 /* SFMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED33210AEF2B0033B250 /* SFMineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,12 +56,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		027B7F1D319B1693B16520AF /* libPods-school.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-school.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		64165E69688A696D3E02C12A /* Pods-school.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school.release.xcconfig"; path = "Pods/Target Support Files/Pods-school/Pods-school.release.xcconfig"; sourceTree = "<group>"; };
+		8445B65C2FB0E79EFC188BED /* Pods-school.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school.debug.xcconfig"; path = "Pods/Target Support Files/Pods-school/Pods-school.debug.xcconfig"; sourceTree = "<group>"; };
 		A67EECAC210ACF9D0033B250 /* school.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = school.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67EECAF210ACF9D0033B250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67EECB0210ACF9D0033B250 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A67EECB2210ACF9D0033B250 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A67EECB3210ACF9D0033B250 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A67EECB6210ACF9D0033B250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A67EECB8210ACF9F0033B250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A67EECBB210ACF9F0033B250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A67EECBD210ACF9F0033B250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +72,49 @@
 		A67EECCF210ACF9F0033B250 /* schoolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = schoolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67EECD3210ACF9F0033B250 /* schoolUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = schoolUITests.m; sourceTree = "<group>"; };
 		A67EECD5210ACF9F0033B250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A67EECE1210AD2EF0033B250 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A67EECE3210AD35F0033B250 /* AppDelegate+SFRegister.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SFRegister.h"; sourceTree = "<group>"; };
+		A67EECE4210AD35F0033B250 /* AppDelegate+SFRegister.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SFRegister.m"; sourceTree = "<group>"; };
+		A67EECE6210AD36A0033B250 /* AppDelegate+SFSetup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SFSetup.h"; sourceTree = "<group>"; };
+		A67EECE7210AD36A0033B250 /* AppDelegate+SFSetup.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SFSetup.m"; sourceTree = "<group>"; };
+		A67EECE9210AD37E0033B250 /* AppDelegate+SFNotify.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+SFNotify.h"; sourceTree = "<group>"; };
+		A67EECEA210AD37E0033B250 /* AppDelegate+SFNotify.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+SFNotify.m"; sourceTree = "<group>"; };
+		A67EECEC210AD48B0033B250 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		A67EECEE210AD49B0033B250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		A67EECF1210AD4E70033B250 /* SFHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHttp.h; sourceTree = "<group>"; };
+		A67EECF2210AD4E70033B250 /* SFHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttp.m; sourceTree = "<group>"; };
+		A67EECF4210AD5390033B250 /* SFHttpBaseService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHttpBaseService.h; sourceTree = "<group>"; };
+		A67EECF5210AD5390033B250 /* SFHttpBaseService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttpBaseService.m; sourceTree = "<group>"; };
+		A67EECF7210AD7470033B250 /* SFHttpService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHttpService.h; sourceTree = "<group>"; };
+		A67EECF8210AD7470033B250 /* SFHttpService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttpService.m; sourceTree = "<group>"; };
+		A67EECFB210AD94A0033B250 /* server-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "server-info.plist"; sourceTree = "<group>"; };
+		A67EECFD210AD9BD0033B250 /* SFServer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFServer.h; sourceTree = "<group>"; };
+		A67EECFE210AD9BD0033B250 /* SFServer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFServer.m; sourceTree = "<group>"; };
+		A67EED00210ADAAE0033B250 /* CHECK_ME */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHECK_ME; sourceTree = "<group>"; };
+		A67EED04210ADBF80033B250 /* en.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = en.strings; sourceTree = "<group>"; };
+		A67EED06210ADC080033B250 /* zh-Hans.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "zh-Hans.strings"; sourceTree = "<group>"; };
+		A67EED0D210ADC440033B250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A67EED0F210ADC460033B250 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		A67EED10210ADC680033B250 /* FFLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFLocalization.h; sourceTree = "<group>"; };
+		A67EED11210ADC680033B250 /* FFLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFLocalization.m; sourceTree = "<group>"; };
+		A67EED14210ADCE70033B250 /* SFUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFUser.h; sourceTree = "<group>"; };
+		A67EED15210ADCE70033B250 /* SFUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFUser.m; sourceTree = "<group>"; };
+		A67EED19210AEB740033B250 /* SFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBaseViewController.h; sourceTree = "<group>"; };
+		A67EED1A210AEB740033B250 /* SFBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBaseViewController.m; sourceTree = "<group>"; };
+		A67EED1C210AEB880033B250 /* SFBaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBaseNavigationController.h; sourceTree = "<group>"; };
+		A67EED1D210AEB880033B250 /* SFBaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBaseNavigationController.m; sourceTree = "<group>"; };
+		A67EED20210AEBCB0033B250 /* SFTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTableView.h; sourceTree = "<group>"; };
+		A67EED21210AEBCB0033B250 /* SFTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTableView.m; sourceTree = "<group>"; };
+		A67EED23210AEBE60033B250 /* SFTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTableViewCell.h; sourceTree = "<group>"; };
+		A67EED24210AEBE60033B250 /* SFTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTableViewCell.m; sourceTree = "<group>"; };
+		A67EED26210AEC180033B250 /* SFBarButtonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBarButtonItem.h; sourceTree = "<group>"; };
+		A67EED27210AEC180033B250 /* SFBarButtonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFBarButtonItem.m; sourceTree = "<group>"; };
+		A67EED2A210AEDEB0033B250 /* SFTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFTabBarController.h; sourceTree = "<group>"; };
+		A67EED2B210AEDEB0033B250 /* SFTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFTabBarController.m; sourceTree = "<group>"; };
+		A67EED2F210AEF200033B250 /* SFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHomeViewController.h; sourceTree = "<group>"; };
+		A67EED30210AEF200033B250 /* SFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHomeViewController.m; sourceTree = "<group>"; };
+		A67EED32210AEF2B0033B250 /* SFMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMineViewController.h; sourceTree = "<group>"; };
+		A67EED33210AEF2B0033B250 /* SFMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BA314EFD4E4D4449DD4927 /* libPods-school.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +143,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46256822E80DAB8ECAB3AB96 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8445B65C2FB0E79EFC188BED /* Pods-school.debug.xcconfig */,
+				64165E69688A696D3E02C12A /* Pods-school.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5840887589AD9E479A6CB533 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				027B7F1D319B1693B16520AF /* libPods-school.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A67EECA3210ACF9D0033B250 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +167,8 @@
 				A67EECC7210ACF9F0033B250 /* schoolTests */,
 				A67EECD2210ACF9F0033B250 /* schoolUITests */,
 				A67EECAD210ACF9D0033B250 /* Products */,
+				46256822E80DAB8ECAB3AB96 /* Pods */,
+				5840887589AD9E479A6CB533 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,15 +185,20 @@
 		A67EECAE210ACF9D0033B250 /* school */ = {
 			isa = PBXGroup;
 			children = (
+				A67EED17210AEB540033B250 /* Main */,
+				A67EED13210ADCD60033B250 /* User */,
+				A67EED02210ADBD50033B250 /* Localization */,
+				A67EECFA210AD92A0033B250 /* Server */,
+				A67EECEF210AD4B40033B250 /* Network */,
+				A67EECE2210AD3400033B250 /* Category */,
 				A67EECAF210ACF9D0033B250 /* AppDelegate.h */,
 				A67EECB0210ACF9D0033B250 /* AppDelegate.m */,
-				A67EECB2210ACF9D0033B250 /* ViewController.h */,
-				A67EECB3210ACF9D0033B250 /* ViewController.m */,
-				A67EECB5210ACF9D0033B250 /* Main.storyboard */,
 				A67EECB8210ACF9F0033B250 /* Assets.xcassets */,
 				A67EECBA210ACF9F0033B250 /* LaunchScreen.storyboard */,
 				A67EECBD210ACF9F0033B250 /* Info.plist */,
 				A67EECBE210ACF9F0033B250 /* main.m */,
+				A67EECE1210AD2EF0033B250 /* PrefixHeader.pch */,
+				A67EED00210ADAAE0033B250 /* CHECK_ME */,
 			);
 			path = school;
 			sourceTree = "<group>";
@@ -132,6 +221,142 @@
 			path = schoolUITests;
 			sourceTree = "<group>";
 		};
+		A67EECE2210AD3400033B250 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				A67EECE3210AD35F0033B250 /* AppDelegate+SFRegister.h */,
+				A67EECE4210AD35F0033B250 /* AppDelegate+SFRegister.m */,
+				A67EECE6210AD36A0033B250 /* AppDelegate+SFSetup.h */,
+				A67EECE7210AD36A0033B250 /* AppDelegate+SFSetup.m */,
+				A67EECE9210AD37E0033B250 /* AppDelegate+SFNotify.h */,
+				A67EECEA210AD37E0033B250 /* AppDelegate+SFNotify.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		A67EECEF210AD4B40033B250 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A67EECF0210AD4BE0033B250 /* Http */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A67EECF0210AD4BE0033B250 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				A67EECF1210AD4E70033B250 /* SFHttp.h */,
+				A67EECF2210AD4E70033B250 /* SFHttp.m */,
+				A67EECF4210AD5390033B250 /* SFHttpBaseService.h */,
+				A67EECF5210AD5390033B250 /* SFHttpBaseService.m */,
+				A67EECF7210AD7470033B250 /* SFHttpService.h */,
+				A67EECF8210AD7470033B250 /* SFHttpService.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		A67EECFA210AD92A0033B250 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				A67EECFB210AD94A0033B250 /* server-info.plist */,
+				A67EECFD210AD9BD0033B250 /* SFServer.h */,
+				A67EECFE210AD9BD0033B250 /* SFServer.m */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		A67EED02210ADBD50033B250 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED03210ADBED0033B250 /* langs */,
+				A67EED0E210ADC440033B250 /* InfoPlist.strings */,
+				A67EED10210ADC680033B250 /* FFLocalization.h */,
+				A67EED11210ADC680033B250 /* FFLocalization.m */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		A67EED03210ADBED0033B250 /* langs */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED04210ADBF80033B250 /* en.strings */,
+				A67EED06210ADC080033B250 /* zh-Hans.strings */,
+			);
+			path = langs;
+			sourceTree = "<group>";
+		};
+		A67EED13210ADCD60033B250 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED14210ADCE70033B250 /* SFUser.h */,
+				A67EED15210ADCE70033B250 /* SFUser.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		A67EED17210AEB540033B250 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED2D210AEEEF0033B250 /* App */,
+				A67EED29210AEDCB0033B250 /* Root */,
+				A67EED1F210AEBB80033B250 /* Common */,
+				A67EED18210AEB5B0033B250 /* Base */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A67EED18210AEB5B0033B250 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED19210AEB740033B250 /* SFBaseViewController.h */,
+				A67EED1A210AEB740033B250 /* SFBaseViewController.m */,
+				A67EED1C210AEB880033B250 /* SFBaseNavigationController.h */,
+				A67EED1D210AEB880033B250 /* SFBaseNavigationController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A67EED1F210AEBB80033B250 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED20210AEBCB0033B250 /* SFTableView.h */,
+				A67EED21210AEBCB0033B250 /* SFTableView.m */,
+				A67EED23210AEBE60033B250 /* SFTableViewCell.h */,
+				A67EED24210AEBE60033B250 /* SFTableViewCell.m */,
+				A67EED26210AEC180033B250 /* SFBarButtonItem.h */,
+				A67EED27210AEC180033B250 /* SFBarButtonItem.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A67EED29210AEDCB0033B250 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED2A210AEDEB0033B250 /* SFTabBarController.h */,
+				A67EED2B210AEDEB0033B250 /* SFTabBarController.m */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A67EED2D210AEEEF0033B250 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED2E210AEF030033B250 /* Controller */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A67EED2E210AEF030033B250 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A67EED2F210AEF200033B250 /* SFHomeViewController.h */,
+				A67EED30210AEF200033B250 /* SFHomeViewController.m */,
+				A67EED32210AEF2B0033B250 /* SFMineViewController.h */,
+				A67EED33210AEF2B0033B250 /* SFMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +364,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A67EECD8210ACF9F0033B250 /* Build configuration list for PBXNativeTarget "school" */;
 			buildPhases = (
+				09F4EA223B59BB7E93935FD7 /* [CP] Check Pods Manifest.lock */,
 				A67EECA8210ACF9D0033B250 /* Sources */,
 				A67EECA9210ACF9D0033B250 /* Frameworks */,
 				A67EECAA210ACF9D0033B250 /* Resources */,
+				9ED798CEC9CC265B844E51BA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +444,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = A67EECA3210ACF9D0033B250;
 			productRefGroup = A67EECAD210ACF9D0033B250 /* Products */;
@@ -235,9 +463,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A67EED07210ADC080033B250 /* zh-Hans.strings in Resources */,
+				A67EED0C210ADC440033B250 /* InfoPlist.strings in Resources */,
+				A67EECFC210AD94A0033B250 /* server-info.plist in Resources */,
 				A67EECBC210ACF9F0033B250 /* LaunchScreen.storyboard in Resources */,
 				A67EECB9210ACF9F0033B250 /* Assets.xcassets in Resources */,
-				A67EECB7210ACF9D0033B250 /* Main.storyboard in Resources */,
+				A67EED01210ADAAE0033B250 /* CHECK_ME in Resources */,
+				A67EED05210ADBF80033B250 /* en.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,14 +489,103 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		09F4EA223B59BB7E93935FD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-school-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9ED798CEC9CC265B844E51BA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-school/Pods-school-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundError@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundErrorIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundMessage@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccess@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundSuccessIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarning@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationBackgroundWarningIcon@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/NotificationButtonBackground@2x.png",
+				"${PODS_ROOT}/TSMessages/Pod/Assets/TSMessagesDefaultDesign.json",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundError.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundError@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundErrorIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundErrorIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundMessage.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundMessage@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccess.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccess@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccessIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundSuccessIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarning.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarning@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarningIcon.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationBackgroundWarningIcon@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationButtonBackground.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationButtonBackground@2x.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TSMessagesDefaultDesign.json",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-school/Pods-school-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A67EECA8210ACF9D0033B250 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A67EECB4210ACF9D0033B250 /* ViewController.m in Sources */,
+				A67EED1B210AEB740033B250 /* SFBaseViewController.m in Sources */,
+				A67EECF3210AD4E70033B250 /* SFHttp.m in Sources */,
+				A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */,
 				A67EECBF210ACF9F0033B250 /* main.m in Sources */,
+				A67EECEB210AD37E0033B250 /* AppDelegate+SFNotify.m in Sources */,
+				A67EED28210AEC180033B250 /* SFBarButtonItem.m in Sources */,
+				A67EED1E210AEB880033B250 /* SFBaseNavigationController.m in Sources */,
+				A67EED22210AEBCB0033B250 /* SFTableView.m in Sources */,
+				A67EECE8210AD36A0033B250 /* AppDelegate+SFSetup.m in Sources */,
+				A67EED16210ADCE70033B250 /* SFUser.m in Sources */,
+				A67EED31210AEF200033B250 /* SFHomeViewController.m in Sources */,
+				A67EED34210AEF2B0033B250 /* SFMineViewController.m in Sources */,
+				A67EED2C210AEDEB0033B250 /* SFTabBarController.m in Sources */,
+				A67EECF9210AD7470033B250 /* SFHttpService.m in Sources */,
+				A67EED12210ADC680033B250 /* FFLocalization.m in Sources */,
+				A67EECF6210AD5390033B250 /* SFHttpBaseService.m in Sources */,
 				A67EECB1210ACF9D0033B250 /* AppDelegate.m in Sources */,
+				A67EECE5210AD35F0033B250 /* AppDelegate+SFRegister.m in Sources */,
+				A67EED25210AEBE60033B250 /* SFTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,20 +621,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A67EECB5210ACF9D0033B250 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A67EECB6210ACF9D0033B250 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A67EECBA210ACF9F0033B250 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A67EECBB210ACF9F0033B250 /* Base */,
+				A67EECEC210AD48B0033B250 /* zh-Hans */,
+				A67EECEE210AD49B0033B250 /* en */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A67EED0E210ADC440033B250 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A67EED0D210ADC440033B250 /* en */,
+				A67EED0F210ADC460033B250 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -323,6 +647,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -381,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -431,10 +757,13 @@
 		};
 		A67EECD9210ACF9F0033B250 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8445B65C2FB0E79EFC188BED /* Pods-school.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLJDHZGYZX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/school/PrefixHeader.pch";
 				INFOPLIST_FILE = school/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -448,10 +777,13 @@
 		};
 		A67EECDA210ACF9F0033B250 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64165E69688A696D3E02C12A /* Pods-school.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QLJDHZGYZX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/school/PrefixHeader.pch";
 				INFOPLIST_FILE = school/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
