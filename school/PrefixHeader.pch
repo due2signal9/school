@@ -39,7 +39,11 @@
 
 #import "AppDelegate+SFRegister.h"
 #import "AppDelegate+SFSetup.h"
+#import "SFTableView.h"
+#import "SFBaseViewController.h"
 #import <YYKit.h>
+#import <Masonry/Masonry.h>
+#import <MJRefresh/MJRefresh.h>
 #import "SFUser.h"
 
 #endif /* PrefixHeader_pch */
