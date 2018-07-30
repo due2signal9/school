@@ -1,16 +1,16 @@
 //
-//  FFNotice.m
+//  SFNotice.m
 //  school
 //
 //  Created by Oliver Mac on 2018/7/27.
 //  Copyright © 2018年 rl. All rights reserved.
 //
 
-#import "FFNotice.h"
+#import "SFNotice.h"
 #import "SFCommon.h"
 #import <MBProgressHUD/MBProgressHUD.h>
 
-@implementation FFNotice
+@implementation SFNotice
 
 + (void)showTSSuccess:(NSString *)message {
     

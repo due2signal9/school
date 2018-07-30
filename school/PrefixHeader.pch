@@ -39,6 +39,8 @@
 
 #import "AppDelegate+SFRegister.h"
 #import "AppDelegate+SFSetup.h"
+#import "SFCommon.h"
+#import "SFNotice.h"
 #import "SFTableView.h"
 #import "SFBaseViewController.h"
 #import "SFNavigationController.h"

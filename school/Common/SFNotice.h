@@ -1,5 +1,5 @@
 //
-//  FFNotice.h
+//  SFNotice.h
 //  school
 //
 //  Created by Oliver Mac on 2018/7/27.
@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <TSMessages/TSMessage.h>
 
-@interface FFNotice : NSObject
+@interface SFNotice : NSObject
 
 + (void)showTSMessage:(NSString *)message type:(TSMessageNotificationType)type;
 + (void)showTSMessage:(NSString *)message type:(TSMessageNotificationType)type duration: (NSTimeInterval)duration;

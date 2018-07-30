@@ -8,6 +8,8 @@
 
 #import "SFBaseViewController.h"
 
-@interface SFHomeViewController : SFBaseViewController
+@interface SFHomeViewController : SFBaseViewController<UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+@property(strong, nonatomic) UICollectionView *mainCollectionView;
 
 @end
