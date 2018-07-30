@@ -7,6 +7,8 @@
 //
 
 #import "SFAppManager.h"
+#import "SFLoginViewController.h"
+#import "SFHomeViewController.h"
 
 static SFAppManager *_instance = nil;
 
@@ -37,15 +39,16 @@ static SFAppManager *_instance = nil;
     int exist = [[[SFUser shared] user_id] intValue];
     if ( exist )
     {
-        //
-        //[[self keyWindow] setRootViewController:v20];
+        
+        SFHomeViewController *home = [[SFHomeViewController alloc] init];
+        [[self keyWindow] setRootViewController:home];
     }
     else
     {
         
-//        SSLoginViewController *v24 = [[SSLoginViewController alloc] init];
-//        SSNavigationController *v25 = [[SSNavigationController alloc] initWithRootViewController:v24];
-//        [[self keyWindow] setRootViewController:v25];
+        SFLoginViewController *lvc = [[SFLoginViewController alloc] init];
+        SFNavigationController *nav = [[SFNavigationController alloc] initWithRootViewController:lvc];
+        [[self keyWindow] setRootViewController:nav];
     }
 }
 

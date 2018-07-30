@@ -17,6 +17,60 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    [self setTitle:SFLocalizedString(@"MINE")];
+    [self setupNavigationBar];
+    [self initSubviews];
+    [self setupSubviews];
+}
+
+- (void)setupNavigationBar {
+    
+    SFBarButtonItem *settingBtn = [[SFBarButtonItem alloc] initWithImage:[UIImage imageNamed:@""] style:UIBarButtonItemStylePlain target:self action:@selector(gotoSettings)];
+    [[self navigationItem] setRightBarButtonItem:settingBtn];
+}
+
+- (void)initSubviews {
+    
+    [self setMainTableView:[[SFTableView alloc] init]];
+    [self setHeadView:[[SFMineHeadView alloc] init]];
+    
+    [[self mainTableView] setTableHeaderView:[self headView]];
+    [[self mainTableView] setTableFooterView:[[UIView alloc] init]];
+    [[self mainTableView] setDelegate:self];
+    [[self mainTableView] setDataSource:self];
+    
+    
+    [[self view] addSubview:[self mainTableView]];
+}
+
+- (void)setupSubviews {
+    
+    [[self mainTableView] mas_makeConstraints:^(MASConstraintMaker *make) {
+       
+        make.edges.insets(UIEdgeInsetsZero);
+    }];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return nil;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return 1;
+}
+
+- (void)gotoSettings {
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

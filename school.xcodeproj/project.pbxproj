@@ -46,6 +46,8 @@
 		A6D6DCB7210F0E1E005CBBBA /* SFHttpApiGetSchoolType.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCB6210F0E1E005CBBBA /* SFHttpApiGetSchoolType.m */; };
 		A6D6DCBA210F0F95005CBBBA /* SFHttpApiGetSchool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchool.m */; };
 		A6D6DCBD210F1F0B005CBBBA /* SFMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCBC210F1F0B005CBBBA /* SFMineHeadView.m */; };
+		A6D6DCC0210F246D005CBBBA /* SFMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCBF210F246D005CBBBA /* SFMineSettingViewController.m */; };
+		A6D6DCC4210F2584005CBBBA /* SFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCC3210F2584005CBBBA /* SFLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +147,10 @@
 		A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttpApiGetSchool.m; sourceTree = "<group>"; };
 		A6D6DCBB210F1F0B005CBBBA /* SFMineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMineHeadView.h; sourceTree = "<group>"; };
 		A6D6DCBC210F1F0B005CBBBA /* SFMineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMineHeadView.m; sourceTree = "<group>"; };
+		A6D6DCBE210F246D005CBBBA /* SFMineSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMineSettingViewController.h; sourceTree = "<group>"; };
+		A6D6DCBF210F246D005CBBBA /* SFMineSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMineSettingViewController.m; sourceTree = "<group>"; };
+		A6D6DCC2210F2584005CBBBA /* SFLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFLoginViewController.h; sourceTree = "<group>"; };
+		A6D6DCC3210F2584005CBBBA /* SFLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -376,6 +382,7 @@
 		A67EED2D210AEEEF0033B250 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A6D6DCC1210F256C005CBBBA /* View */,
 				A67EED2E210AEF030033B250 /* Controller */,
 			);
 			path = App;
@@ -392,8 +399,10 @@
 				A6D6DCAF210F0C5E005CBBBA /* SFSelectSchoolTypeViewController.m */,
 				A6D6DCB1210F0C69005CBBBA /* SFSelectSchoolViewController.h */,
 				A6D6DCB2210F0C69005CBBBA /* SFSelectSchoolViewController.m */,
-				A6D6DCBB210F1F0B005CBBBA /* SFMineHeadView.h */,
-				A6D6DCBC210F1F0B005CBBBA /* SFMineHeadView.m */,
+				A6D6DCBE210F246D005CBBBA /* SFMineSettingViewController.h */,
+				A6D6DCBF210F246D005CBBBA /* SFMineSettingViewController.m */,
+				A6D6DCC2210F2584005CBBBA /* SFLoginViewController.h */,
+				A6D6DCC3210F2584005CBBBA /* SFLoginViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -429,6 +438,15 @@
 				A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchool.m */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		A6D6DCC1210F256C005CBBBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6D6DCBB210F1F0B005CBBBA /* SFMineHeadView.h */,
+				A6D6DCBC210F1F0B005CBBBA /* SFMineHeadView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -644,6 +662,7 @@
 				A6D6DCB0210F0C5E005CBBBA /* SFSelectSchoolTypeViewController.m in Sources */,
 				A67EED1B210AEB740033B250 /* SFBaseViewController.m in Sources */,
 				A67EECF3210AD4E70033B250 /* SFHttp.m in Sources */,
+				A6D6DCC0210F246D005CBBBA /* SFMineSettingViewController.m in Sources */,
 				A6D6DCB3210F0C69005CBBBA /* SFSelectSchoolViewController.m in Sources */,
 				A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */,
 				A67EED46210AF8290033B250 /* FFNotice.m in Sources */,
@@ -651,6 +670,7 @@
 				A67EECBF210ACF9F0033B250 /* main.m in Sources */,
 				A67EECEB210AD37E0033B250 /* AppDelegate+SFNotify.m in Sources */,
 				A67EED40210AF4010033B250 /* SFCommon.m in Sources */,
+				A6D6DCC4210F2584005CBBBA /* SFLoginViewController.m in Sources */,
 				A67EED3B210AF2460033B250 /* SFAppManager.m in Sources */,
 				A67EED28210AEC180033B250 /* SFBarButtonItem.m in Sources */,
 				A6D6DCBD210F1F0B005CBBBA /* SFMineHeadView.m in Sources */,

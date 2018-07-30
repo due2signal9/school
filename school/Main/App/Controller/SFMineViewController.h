@@ -7,7 +7,11 @@
 //
 
 #import "SFBaseViewController.h"
+#import "SFMineHeadView.h"
 
-@interface SFMineViewController : SFBaseViewController
+@interface SFMineViewController : SFBaseViewController<UITableViewDelegate, UITableViewDataSource>
+
+@property(strong, nonatomic) SFMineHeadView *headView;
+@property(strong, nonatomic) SFTableView *mainTableView;
 
 @end
