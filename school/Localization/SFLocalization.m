@@ -1,14 +1,14 @@
 //
-//  FFLocalization.m
+//  SFLocalization.m
 //  school
 //
 //  Created by Oliver Mac on 2018/7/27.
 //  Copyright © 2018年 rl. All rights reserved.
 //
 
-#import "FFLocalization.h"
+#import "SFLocalization.h"
 
-@implementation FFLocalization
+@implementation SFLocalization
 
 //获取本地化的字符串
 + (NSString *)localizedStringWithKey:(NSString *)key {

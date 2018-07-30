@@ -15,7 +15,7 @@
 //一些宏定义
 #define SFWeakSelf(ws)  __weak __typeof(&*self)ws = self;
 #define SFStrongSelf(ws)  __strong __typeof(&*self)ws = self;
-#define SFLocalizedString(key) [SFLocalization localizedStringWithKey: (key)]
+#define SFLocalizedString(key) [SFLocalization localizedStringWithKey:(key)]
 
 #define SF_HW_RATIO (667.0/375.0)
 
@@ -45,5 +45,6 @@
 #import <Masonry/Masonry.h>
 #import <MJRefresh/MJRefresh.h>
 #import "SFUser.h"
+#import "Localization/SFLocalization.h"
 
 #endif /* PrefixHeader_pch */

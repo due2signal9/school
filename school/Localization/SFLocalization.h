@@ -1,5 +1,5 @@
 //
-//  FFLocalization.h
+//  SFLocalization.h
 //  school
 //
 //  Created by Oliver Mac on 2018/7/27.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FFLocalization : NSObject
+@interface SFLocalization : NSObject
 
 + (NSString *)localizedStringWithKey:(NSString *)key;
 

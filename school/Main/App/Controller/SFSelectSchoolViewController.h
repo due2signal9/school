@@ -8,8 +8,9 @@
 
 #import "SFBaseViewController.h"
 
-@interface SFSelectSchoolViewController : SFBaseViewController<UITableViewDelegate, UITableViewDataSource>
+@interface SFSelectSchoolViewController : SFBaseViewController<UITableViewDelegate, UITableViewDataSource, UISearchControllerDelegate, UISearchResultsUpdating>
 
+@property(strong, nonatomic) UISearchController *searchController;
 @property(strong, nonatomic) SFTableView *mainTableView;
 @property(strong, nonatomic) NSArray *schoolData;
 @property(copy, nonatomic) NSNumber *schoolType;

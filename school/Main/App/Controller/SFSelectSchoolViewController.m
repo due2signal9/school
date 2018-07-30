@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setTitle:SFLocalizedString(@"SCHOOL_TYPE")];
     [self initSubviews];
     [self setupSubviews];
     // Do any additional setup after loading the view.
@@ -25,12 +26,22 @@
 
 - (void)initSubviews {
     
+    UISearchController *sc = [[UISearchController alloc] initWithSearchResultsController:nil];
+    [self setSearchController:sc];
+    [[self searchController] setDelegate:self];
+    [[self searchController] setSearchResultsUpdater:self];
+    [[[self searchController] searchBar] setPlaceholder:@"请输入关键字搜索"];
+    
     [self setMainTableView:[[SFTableView alloc] init]];
     MJRefreshNormalHeader *mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(requestSchool)];
     [[self mainTableView] setDelegate:self];
     [[self mainTableView] setDataSource:self];
     [[self mainTableView] setMj_header:mj_header];
     [[self mainTableView] setTableFooterView:[[UIView alloc] init]];
+    
+    [[self mainTableView] setTableHeaderView:[[self searchController] searchBar]];
+    [[self view] addSubview:[self mainTableView]];
+    [[[self searchController] searchBar] sizeToFit];
 }
 
 - (void)setupSubviews {

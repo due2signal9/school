@@ -26,7 +26,7 @@
 		A67EED05210ADBF80033B250 /* en.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67EED04210ADBF80033B250 /* en.strings */; };
 		A67EED07210ADC080033B250 /* zh-Hans.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67EED06210ADC080033B250 /* zh-Hans.strings */; };
 		A67EED0C210ADC440033B250 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A67EED0E210ADC440033B250 /* InfoPlist.strings */; };
-		A67EED12210ADC680033B250 /* FFLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED11210ADC680033B250 /* FFLocalization.m */; };
+		A67EED12210ADC680033B250 /* SFLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED11210ADC680033B250 /* SFLocalization.m */; };
 		A67EED16210ADCE70033B250 /* SFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED15210ADCE70033B250 /* SFUser.m */; };
 		A67EED1B210AEB740033B250 /* SFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED1A210AEB740033B250 /* SFBaseViewController.m */; };
 		A67EED1E210AEB880033B250 /* SFBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED1D210AEB880033B250 /* SFBaseNavigationController.m */; };
@@ -104,8 +104,8 @@
 		A67EED06210ADC080033B250 /* zh-Hans.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = "zh-Hans.strings"; sourceTree = "<group>"; };
 		A67EED0D210ADC440033B250 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A67EED0F210ADC460033B250 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
-		A67EED10210ADC680033B250 /* FFLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFLocalization.h; sourceTree = "<group>"; };
-		A67EED11210ADC680033B250 /* FFLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFLocalization.m; sourceTree = "<group>"; };
+		A67EED10210ADC680033B250 /* SFLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFLocalization.h; sourceTree = "<group>"; };
+		A67EED11210ADC680033B250 /* SFLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFLocalization.m; sourceTree = "<group>"; };
 		A67EED14210ADCE70033B250 /* SFUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFUser.h; sourceTree = "<group>"; };
 		A67EED15210ADCE70033B250 /* SFUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFUser.m; sourceTree = "<group>"; };
 		A67EED19210AEB740033B250 /* SFBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFBaseViewController.h; sourceTree = "<group>"; };
@@ -298,8 +298,8 @@
 			children = (
 				A67EED03210ADBED0033B250 /* langs */,
 				A67EED0E210ADC440033B250 /* InfoPlist.strings */,
-				A67EED10210ADC680033B250 /* FFLocalization.h */,
-				A67EED11210ADC680033B250 /* FFLocalization.m */,
+				A67EED10210ADC680033B250 /* SFLocalization.h */,
+				A67EED11210ADC680033B250 /* SFLocalization.m */,
 			);
 			path = Localization;
 			sourceTree = "<group>";
@@ -659,7 +659,7 @@
 				A67EED2C210AEDEB0033B250 /* SFTabBarController.m in Sources */,
 				A67EECF9210AD7470033B250 /* SFHttpService.m in Sources */,
 				A67EED43210AF4500033B250 /* SFPath.m in Sources */,
-				A67EED12210ADC680033B250 /* FFLocalization.m in Sources */,
+				A67EED12210ADC680033B250 /* SFLocalization.m in Sources */,
 				A67EECF6210AD5390033B250 /* SFHttpBaseService.m in Sources */,
 				A67EECB1210ACF9D0033B250 /* AppDelegate.m in Sources */,
 				A67EECE5210AD35F0033B250 /* AppDelegate+SFRegister.m in Sources */,
