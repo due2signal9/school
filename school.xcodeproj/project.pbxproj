@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		83BA314EFD4E4D4449DD4927 /* libPods-school.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 027B7F1D319B1693B16520AF /* libPods-school.a */; };
+		A610211E2118485800B55854 /* SFSchoolTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A610211D2118485800B55854 /* SFSchoolTypeModel.m */; };
 		A67EECB1210ACF9D0033B250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EECB0210ACF9D0033B250 /* AppDelegate.m */; };
 		A67EECB9210ACF9F0033B250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A67EECB8210ACF9F0033B250 /* Assets.xcassets */; };
 		A67EECBC210ACF9F0033B250 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A67EECBA210ACF9F0033B250 /* LaunchScreen.storyboard */; };
@@ -72,6 +73,8 @@
 		027B7F1D319B1693B16520AF /* libPods-school.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-school.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		64165E69688A696D3E02C12A /* Pods-school.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school.release.xcconfig"; path = "Pods/Target Support Files/Pods-school/Pods-school.release.xcconfig"; sourceTree = "<group>"; };
 		8445B65C2FB0E79EFC188BED /* Pods-school.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-school.debug.xcconfig"; path = "Pods/Target Support Files/Pods-school/Pods-school.debug.xcconfig"; sourceTree = "<group>"; };
+		A610211C2118485800B55854 /* SFSchoolTypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSchoolTypeModel.h; sourceTree = "<group>"; };
+		A610211D2118485800B55854 /* SFSchoolTypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSchoolTypeModel.m; sourceTree = "<group>"; };
 		A67EECAC210ACF9D0033B250 /* school.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = school.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A67EECAF210ACF9D0033B250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A67EECB0210ACF9D0033B250 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -197,6 +200,15 @@
 				027B7F1D319B1693B16520AF /* libPods-school.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A610211B2118482D00B55854 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A610211C2118485800B55854 /* SFSchoolTypeModel.h */,
+				A610211D2118485800B55854 /* SFSchoolTypeModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A67EECA3210ACF9D0033B250 = {
@@ -385,6 +397,7 @@
 		A67EED2D210AEEEF0033B250 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A610211B2118482D00B55854 /* Model */,
 				A6D6DCC1210F256C005CBBBA /* View */,
 				A67EED2E210AEF030033B250 /* Controller */,
 			);
@@ -671,6 +684,7 @@
 				A6D6DCB3210F0C69005CBBBA /* SFSelectSchoolViewController.m in Sources */,
 				A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */,
 				A67EED46210AF8290033B250 /* SFNotice.m in Sources */,
+				A610211E2118485800B55854 /* SFSchoolTypeModel.m in Sources */,
 				A6D6DCBA210F0F95005CBBBA /* SFHttpApiGetSchool.m in Sources */,
 				A67EECBF210ACF9F0033B250 /* main.m in Sources */,
 				A6D6DCC7210F296F005CBBBA /* SFHttpApiGetHome.m in Sources */,

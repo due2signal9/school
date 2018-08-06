@@ -12,9 +12,9 @@
 	<key>dev</key>
 	<dict>
 		<key>api_host</key>
-		<string></string>
+		<string>http://106.14.247.19:8080</string>
 		<key>api_host_port</key>
-		<string></string>
+		<string>remained</string>
 	</dict>
 	<key>test</key>
 	<dict>

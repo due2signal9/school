@@ -9,6 +9,7 @@
 #import "SFSelectSchoolTypeViewController.h"
 #import "SFHttpApiGetSchoolType.h"
 #import "SFSelectSchoolViewController.h"
+#import "SFSchoolTypeModel.h"
 
 @interface SFSelectSchoolTypeViewController ()
 
@@ -22,6 +23,8 @@
     
     [self initSubviews];
     [self setupSubviews];
+    [self setSchoolTypeData:[NSMutableArray arrayWithCapacity:3]];
+    [[[self mainTableView] mj_header] beginRefreshing];
 }
 
 - (void)initSubviews {
@@ -32,6 +35,7 @@
     [[self mainTableView] setDataSource:self];
     [[self mainTableView] setMj_header:mj_header];
     [[self mainTableView] setTableFooterView:[[UIView alloc] init]];
+    [[self view] addSubview:[self mainTableView]];
 }
 
 - (void)setupSubviews {
@@ -47,8 +51,25 @@
     SFHttpApiGetSchoolType *api = [[SFHttpApiGetSchoolType alloc] init];
     [api requestAsyncWithReturend:^(id response) {
         
+        id data = [NSJSONSerialization JSONObjectWithData:response options:1 error:0];
+        
+        if ([data isKindOfClass:[NSDictionary class]])
+        {
+            
+            NSArray *types = [(NSDictionary *)data objectForKeyedSubscript:@"data"];
+            for (NSDictionary *type in types)
+            {
+                
+                SFSchoolTypeModel *model = [SFSchoolTypeModel modelWithDictionary:type];
+                [[self schoolTypeData] addObject:model];
+            }
+        }
+        
+        [[[self mainTableView] mj_header] endRefreshing];
+        [[self mainTableView] reloadData];
     } withProgress:nil withError:^(NSError *error) {
         
+        [SFNotice showHUDError:@"request error"];
     }];
 }
 
@@ -56,6 +77,8 @@
     
     NSString *identifier = NSStringFromClass([self class]);
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:0 reuseIdentifier:identifier];
+    NSString *title = [[[self schoolTypeData] objectAtIndex:[indexPath row]] title];
+    [[cell textLabel] setText:title];
     return cell;
 }
 
@@ -72,7 +95,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     SFSelectSchoolViewController *schoolVC = [[SFSelectSchoolViewController alloc] init];
-    [schoolVC setSchoolType:0];
+    NSNumber *typeId = [[self schoolTypeData] objectAtIndex:[indexPath row]];
+    [schoolVC setSchoolType:typeId];
 }
 
 - (void)didReceiveMemoryWarning {

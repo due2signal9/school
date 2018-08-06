@@ -48,7 +48,44 @@
 - (void)addRequest:(SFHttpBaseService *)service {
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    
+
+    if ([service requestMethod] == GET)
+    {
+        
+        [[self sessionManager] GET:[service buildHttpURL] parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+            if ([service progressBridgeBlock])
+                [service progressBridgeBlock](downloadProgress);
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            if([service successBridgeBlock])
+                [service successBridgeBlock](task, responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            if ( [service errorBridgeBlock] )
+                [service errorBridgeBlock](task, error);
+        }];
+    }
+    else if ([service requestMethod] == POST)
+    {
+        
+        [[self sessionManager] POST:[service buildHttpURL] parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+            
+            
+        } progress:^(NSProgress * _Nonnull uploadProgress) {
+            
+            if ([service progressBridgeBlock])
+                [service progressBridgeBlock](uploadProgress);
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            if ([service successBridgeBlock])
+                [service successBridgeBlock](task, responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+            if ([service errorBridgeBlock])
+                [service errorBridgeBlock](task, error);
+        }];
+    }
 }
 
 @end

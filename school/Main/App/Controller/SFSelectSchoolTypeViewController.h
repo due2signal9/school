@@ -11,6 +11,6 @@
 @interface SFSelectSchoolTypeViewController : SFBaseViewController<UITableViewDelegate, UITableViewDataSource>
 
 @property(strong, nonatomic) SFTableView *mainTableView;
-@property(strong, nonatomic) NSArray *schoolTypeData;
+@property(strong, nonatomic) NSMutableArray *schoolTypeData;
 
 @end

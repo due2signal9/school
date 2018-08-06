@@ -36,7 +36,7 @@ typedef enum : NSUInteger {
 //- (NSString *)token;
 - (CGFloat)timeoutInterval;
 - (METHOD)requestMethod;
-//- (NSString *)buildHttpURL;
+- (NSString *)buildHttpURL;
 - (void)beginRequest;
 
 @end

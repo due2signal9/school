@@ -9,6 +9,7 @@
 #import "SFAppManager.h"
 #import "SFLoginViewController.h"
 #import "SFHomeViewController.h"
+#import "SFTabBarController.h"
 
 static SFAppManager *_instance = nil;
 
@@ -36,20 +37,22 @@ static SFAppManager *_instance = nil;
 - (void)loadRootViewController
 {
     
-    int exist = [[[SFUser shared] user_id] intValue];
-    if ( exist )
-    {
-        
-        SFHomeViewController *home = [[SFHomeViewController alloc] init];
-        [[self keyWindow] setRootViewController:home];
-    }
-    else
-    {
-        
-        SFLoginViewController *lvc = [[SFLoginViewController alloc] init];
-        SFNavigationController *nav = [[SFNavigationController alloc] initWithRootViewController:lvc];
-        [[self keyWindow] setRootViewController:nav];
-    }
+    SFTabBarController *hRoot = [[SFTabBarController alloc] init];
+    [[self keyWindow] setRootViewController:hRoot];
+//    int exist = [[[SFUser shared] user_id] intValue];
+//    if ( exist )
+//    {
+//
+//        SFHomeViewController *home = [[SFHomeViewController alloc] init];
+//        [[self keyWindow] setRootViewController:home];
+//    }
+//    else
+//    {
+//
+//        SFLoginViewController *lvc = [[SFLoginViewController alloc] init];
+//        SFNavigationController *nav = [[SFNavigationController alloc] initWithRootViewController:lvc];
+//        [[self keyWindow] setRootViewController:nav];
+//    }
 }
 
 - (void)logout {

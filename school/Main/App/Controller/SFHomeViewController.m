@@ -8,6 +8,7 @@
 
 #import "SFHomeViewController.h"
 #import "SFHttpApiGetHome.h"
+#import "SFSelectSchoolTypeViewController.h"
 
 @interface SFHomeViewController ()
 
@@ -20,8 +21,14 @@
     // Do any additional setup after loading the view.
     
     [self setTitle:SFLocalizedString(@"SCHOOL_NOT_SELECTED")];
-    [self initSubviews];
-    [self setupSubviews];
+    //[self initSubviews];
+    //[self setupSubviews];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    SFSelectSchoolTypeViewController *tvc = [[SFSelectSchoolTypeViewController alloc] init];
+    [[self navigationController] pushViewController:tvc animated:1];
 }
 
 - (void)initSubviews {

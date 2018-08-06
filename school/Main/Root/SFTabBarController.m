@@ -7,6 +7,8 @@
 //
 
 #import "SFTabBarController.h"
+#import "SFHomeViewController.h"
+#import "SFMineViewController.h"
 
 @interface SFTabBarController ()
 
@@ -17,6 +19,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    SFHomeViewController *homeVc = [[SFHomeViewController alloc] init];
+    SFNavigationController *homeNav = [[SFNavigationController alloc] initWithRootViewController:homeVc];
+    SFMineViewController *mineVc = [[SFMineViewController alloc] init];
+    SFNavigationController *mineNav = [[SFNavigationController alloc] initWithRootViewController:mineVc];
+    [self setViewControllers:@[homeNav, mineNav]];
 }
 
 - (void)didReceiveMemoryWarning {

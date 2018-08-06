@@ -61,10 +61,11 @@ static NSDictionary *_server_dict = nil;
         if (api_host)
         {
             
-            if ( ![api_host hasSuffix:@"/"] )
+            apiHost = api_host;
+            if ( [api_host hasSuffix:@"/"] )
             {
-                
-                apiHost = [NSString stringWithFormat:@"%@%@", api_host, @"/"];
+                NSRange range = [api_host rangeOfAll];
+                apiHost = [api_host substringWithRange:NSMakeRange(range.location, range.length - 1)];
             }
         }
     }
@@ -72,24 +73,24 @@ static NSDictionary *_server_dict = nil;
     return apiHost;
 }
 
-+ (NSString *)getApiHostPortForServerType:(NSString *)type {
-    
-    NSString *apiPort = @"这里应该处理处理错误的情况";
-    
-    NSDictionary *server_dict = [[self class] getServerDictForType:type];
-    
-    if (server_dict && [server_dict count])
-    {
-        
-        NSString *api_port = [server_dict objectForKeyedSubscript:@"api_host_port"];
-        if (api_port)
-        {
-            
-            apiPort = api_port;
-        }
-    }
-    
-    return apiPort;
-}
+//+ (NSString *)getApiHostPortForServerType:(NSString *)type {
+//
+//    NSString *apiPort = @"这里应该处理处理错误的情况";
+//
+//    NSDictionary *server_dict = [[self class] getServerDictForType:type];
+//
+//    if (server_dict && [server_dict count])
+//    {
+//
+//        NSString *api_port = [server_dict objectForKeyedSubscript:@"api_host_port"];
+//        if (api_port)
+//        {
+//
+//            apiPort = api_port;
+//        }
+//    }
+//
+//    return apiPort;
+//}
 
 @end

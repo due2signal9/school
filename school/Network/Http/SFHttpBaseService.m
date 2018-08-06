@@ -49,6 +49,18 @@
     return 60.0;
 }
 
+- (NSString *)buildHttpURL {
+    
+    NSString *url = [self requestURL];
+    if ([url hasPrefix:@"http"] || [url hasPrefix:@"https"])
+    {
+        
+        return url;
+    }
+    
+    return [NSString stringWithFormat:@"%@%@", [self baseURL], [self requestURL]];
+}
+
 - (void)beginRequest {
     
     [[SFHttp shared] addRequest:self];

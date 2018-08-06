@@ -10,4 +10,9 @@
 
 @implementation SFHttpApiGetSchoolType
 
+- (NSString *)requestURL {
+    
+    return @"/school/category";
+}
+
 @end

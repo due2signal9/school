@@ -96,14 +96,14 @@
 #endif
 }
 
-- (NSString *)port {
-    
-#ifdef IS_DEV_SERVER
-    return [SFServer getApiHostPortForServerType:@"dev"];
-#else
-    return [SFServer getApiHostPortForServerType:@"test"];
-#endif
-}
+//- (NSString *)port {
+//
+//#ifdef IS_DEV_SERVER
+//    return [SFServer getApiHostPortForServerType:@"dev"];
+//#else
+//    return [SFServer getApiHostPortForServerType:@"test"];
+//#endif
+//}
 
 - (void)resume {
     
