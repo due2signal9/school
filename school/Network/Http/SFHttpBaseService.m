@@ -44,6 +44,11 @@
     return GET;
 }
 
+- (NSDictionary *)requestParams {
+    
+    return nil;
+}
+
 - (CGFloat)timeoutInterval {
     
     return 60.0;

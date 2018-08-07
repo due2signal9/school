@@ -42,10 +42,11 @@
 		A67EED40210AF4010033B250 /* SFCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED3F210AF4010033B250 /* SFCommon.m */; };
 		A67EED43210AF4500033B250 /* SFPath.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED42210AF4500033B250 /* SFPath.m */; };
 		A67EED46210AF8290033B250 /* SFNotice.m in Sources */ = {isa = PBXBuildFile; fileRef = A67EED45210AF8290033B250 /* SFNotice.m */; };
+		A6A62424211983C000264102 /* SFSchoolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A6A62423211983C000264102 /* SFSchoolModel.m */; };
 		A6D6DCB0210F0C5E005CBBBA /* SFSelectSchoolTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCAF210F0C5E005CBBBA /* SFSelectSchoolTypeViewController.m */; };
 		A6D6DCB3210F0C69005CBBBA /* SFSelectSchoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCB2210F0C69005CBBBA /* SFSelectSchoolViewController.m */; };
 		A6D6DCB7210F0E1E005CBBBA /* SFHttpApiGetSchoolType.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCB6210F0E1E005CBBBA /* SFHttpApiGetSchoolType.m */; };
-		A6D6DCBA210F0F95005CBBBA /* SFHttpApiGetSchool.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchool.m */; };
+		A6D6DCBA210F0F95005CBBBA /* SFHttpApiGetSchoolList.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchoolList.m */; };
 		A6D6DCBD210F1F0B005CBBBA /* SFMineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCBC210F1F0B005CBBBA /* SFMineHeadView.m */; };
 		A6D6DCC0210F246D005CBBBA /* SFMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCBF210F246D005CBBBA /* SFMineSettingViewController.m */; };
 		A6D6DCC4210F2584005CBBBA /* SFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCC3210F2584005CBBBA /* SFLoginViewController.m */; };
@@ -141,14 +142,16 @@
 		A67EED42210AF4500033B250 /* SFPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFPath.m; sourceTree = "<group>"; };
 		A67EED44210AF8290033B250 /* SFNotice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFNotice.h; sourceTree = "<group>"; };
 		A67EED45210AF8290033B250 /* SFNotice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFNotice.m; sourceTree = "<group>"; };
+		A6A62422211983C000264102 /* SFSchoolModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSchoolModel.h; sourceTree = "<group>"; };
+		A6A62423211983C000264102 /* SFSchoolModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSchoolModel.m; sourceTree = "<group>"; };
 		A6D6DCAE210F0C5E005CBBBA /* SFSelectSchoolTypeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSelectSchoolTypeViewController.h; sourceTree = "<group>"; };
 		A6D6DCAF210F0C5E005CBBBA /* SFSelectSchoolTypeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSelectSchoolTypeViewController.m; sourceTree = "<group>"; };
 		A6D6DCB1210F0C69005CBBBA /* SFSelectSchoolViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFSelectSchoolViewController.h; sourceTree = "<group>"; };
 		A6D6DCB2210F0C69005CBBBA /* SFSelectSchoolViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFSelectSchoolViewController.m; sourceTree = "<group>"; };
 		A6D6DCB5210F0E1E005CBBBA /* SFHttpApiGetSchoolType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHttpApiGetSchoolType.h; sourceTree = "<group>"; };
 		A6D6DCB6210F0E1E005CBBBA /* SFHttpApiGetSchoolType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttpApiGetSchoolType.m; sourceTree = "<group>"; };
-		A6D6DCB8210F0F95005CBBBA /* SFHttpApiGetSchool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHttpApiGetSchool.h; sourceTree = "<group>"; };
-		A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttpApiGetSchool.m; sourceTree = "<group>"; };
+		A6D6DCB8210F0F95005CBBBA /* SFHttpApiGetSchoolList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHttpApiGetSchoolList.h; sourceTree = "<group>"; };
+		A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchoolList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttpApiGetSchoolList.m; sourceTree = "<group>"; };
 		A6D6DCBB210F1F0B005CBBBA /* SFMineHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMineHeadView.h; sourceTree = "<group>"; };
 		A6D6DCBC210F1F0B005CBBBA /* SFMineHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMineHeadView.m; sourceTree = "<group>"; };
 		A6D6DCBE210F246D005CBBBA /* SFMineSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMineSettingViewController.h; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 			children = (
 				A610211C2118485800B55854 /* SFSchoolTypeModel.h */,
 				A610211D2118485800B55854 /* SFSchoolTypeModel.m */,
+				A6A62422211983C000264102 /* SFSchoolModel.h */,
+				A6A62423211983C000264102 /* SFSchoolModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -450,8 +455,8 @@
 			children = (
 				A6D6DCB5210F0E1E005CBBBA /* SFHttpApiGetSchoolType.h */,
 				A6D6DCB6210F0E1E005CBBBA /* SFHttpApiGetSchoolType.m */,
-				A6D6DCB8210F0F95005CBBBA /* SFHttpApiGetSchool.h */,
-				A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchool.m */,
+				A6D6DCB8210F0F95005CBBBA /* SFHttpApiGetSchoolList.h */,
+				A6D6DCB9210F0F95005CBBBA /* SFHttpApiGetSchoolList.m */,
 				A6D6DCC5210F296F005CBBBA /* SFHttpApiGetHome.h */,
 				A6D6DCC6210F296F005CBBBA /* SFHttpApiGetHome.m */,
 			);
@@ -679,13 +684,14 @@
 			files = (
 				A6D6DCB0210F0C5E005CBBBA /* SFSelectSchoolTypeViewController.m in Sources */,
 				A67EED1B210AEB740033B250 /* SFBaseViewController.m in Sources */,
+				A6A62424211983C000264102 /* SFSchoolModel.m in Sources */,
 				A67EECF3210AD4E70033B250 /* SFHttp.m in Sources */,
 				A6D6DCC0210F246D005CBBBA /* SFMineSettingViewController.m in Sources */,
 				A6D6DCB3210F0C69005CBBBA /* SFSelectSchoolViewController.m in Sources */,
 				A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */,
 				A67EED46210AF8290033B250 /* SFNotice.m in Sources */,
 				A610211E2118485800B55854 /* SFSchoolTypeModel.m in Sources */,
-				A6D6DCBA210F0F95005CBBBA /* SFHttpApiGetSchool.m in Sources */,
+				A6D6DCBA210F0F95005CBBBA /* SFHttpApiGetSchoolList.m in Sources */,
 				A67EECBF210ACF9F0033B250 /* main.m in Sources */,
 				A6D6DCC7210F296F005CBBBA /* SFHttpApiGetHome.m in Sources */,
 				A67EECEB210AD37E0033B250 /* AppDelegate+SFNotify.m in Sources */,

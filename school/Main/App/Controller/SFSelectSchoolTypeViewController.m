@@ -94,9 +94,10 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    SFSelectSchoolViewController *schoolVC = [[SFSelectSchoolViewController alloc] init];
-    NSNumber *typeId = [[self schoolTypeData] objectAtIndex:[indexPath row]];
-    [schoolVC setSchoolType:typeId];
+    SFSelectSchoolViewController *schoolListVC = [[SFSelectSchoolViewController alloc] init];
+    NSNumber *typeId = [[[self schoolTypeData] objectAtIndex:[indexPath row]] id];
+    [schoolListVC setSchoolType:typeId];
+    [[self navigationController] pushViewController:schoolListVC animated:1];
 }
 
 - (void)didReceiveMemoryWarning {

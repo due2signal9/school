@@ -7,7 +7,8 @@
 //
 
 #import "SFSelectSchoolViewController.h"
-#import "SFHttpApiGetSchool.h"
+#import "SFHttpApiGetSchoolList.h"
+#import "SFSchoolModel.h"
 
 @interface SFSelectSchoolViewController ()
 
@@ -17,11 +18,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view.
+
     [self setTitle:SFLocalizedString(@"SCHOOL_TYPE")];
+    [self setSchoolList:[NSMutableArray arrayWithCapacity:20]];
+    _is_first_load = YES;
     [self initSubviews];
     [self setupSubviews];
-    // Do any additional setup after loading the view.
 }
 
 - (void)initSubviews {
@@ -52,13 +55,39 @@
     }];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [super viewWillAppear:animated];
+    if (_is_first_load)
+        [self requestSchool];
+    _is_first_load = NO;
+}
+
 - (void)requestSchool {
     
-    SFHttpApiGetSchool *api = [[SFHttpApiGetSchool alloc] init];
+    SFHttpApiGetSchoolList *api = [[SFHttpApiGetSchoolList alloc] init];
+    [api setCategory_id:[self schoolType]];
     [api requestAsyncWithReturend:^(id response) {
         
+        id data = [NSJSONSerialization JSONObjectWithData:response options:1 error:0];
+        
+        if ([data isKindOfClass:[NSDictionary class]])
+        {
+            
+            NSArray *schools = [data objectForKeyedSubscript:@"data"];
+            [[self schoolList] removeAllObjects];
+            for (NSDictionary *school in schools)
+            {
+                
+                SFSchoolModel *model = [SFSchoolModel modelWithDictionary:school];
+                [[self schoolList] addObject:model];
+            }
+        }
+        
+        [[self mainTableView] reloadData];
     } withProgress:nil withError:^(NSError *error) {
         
+        [SFNotice showHUDError:@"[SFHttpApiGetSchoolList] request error"];
     }];
 }
 
@@ -66,6 +95,8 @@
     
     NSString *identifier = NSStringFromClass([self class]);
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:0 reuseIdentifier:identifier];
+    NSString *title = [[[self schoolList] objectAtIndex:[indexPath row]] name];
+    [[cell textLabel] setText:title];
     return cell;
 }
 
@@ -76,12 +107,13 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [[self schoolData] count];
+    return [[self schoolList] count];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    
+    //发送通知通知homevc更改学校并获取新的信息
+    //直接显示homevc 并获取新的学校信息
 }
 
 - (void)didReceiveMemoryWarning {

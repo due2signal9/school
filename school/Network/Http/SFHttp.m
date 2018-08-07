@@ -48,6 +48,9 @@
 - (void)addRequest:(SFHttpBaseService *)service {
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+    
+    if ([service requestParams])
+        [params addEntriesFromDictionary:[service requestParams]];
 
     if ([service requestMethod] == GET)
     {

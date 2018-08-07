@@ -8,6 +8,8 @@
 
 #import "SFHttpService.h"
 
-@interface SFHttpApiGetSchool : SFHttpService
+@interface SFHttpApiGetSchoolList : SFHttpService
+
+@property(copy, nonatomic) NSNumber *category_id;
 
 @end
