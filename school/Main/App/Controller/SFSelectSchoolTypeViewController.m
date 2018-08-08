@@ -20,7 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+
+    [self setTitle:SFLocalizedString(@"SCHOOL_TYPE")];
     [self initSubviews];
     [self setupSubviews];
     [self setSchoolTypeData:[NSMutableArray arrayWithCapacity:3]];
@@ -36,6 +37,17 @@
     [[self mainTableView] setMj_header:mj_header];
     [[self mainTableView] setTableFooterView:[[UIView alloc] init]];
     [[self view] addSubview:[self mainTableView]];
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithTitle:SFLocalizedString(@"BACK") style:UIBarButtonItemStylePlain target:self action:@selector(meBack)];
+    self.navigationItem.leftBarButtonItem = backItem;
+}
+
+- (void)meBack {
+    
+    [self dismissViewControllerAnimated:1 completion:^{
+       //do something here.
+        
+    }];
 }
 
 - (void)setupSubviews {
@@ -57,6 +69,7 @@
         {
             
             NSArray *types = [(NSDictionary *)data objectForKeyedSubscript:@"data"];
+            [[self schoolTypeData] removeAllObjects];
             for (NSDictionary *type in types)
             {
                 
@@ -70,6 +83,7 @@
     } withProgress:nil withError:^(NSError *error) {
         
         [SFNotice showHUDError:@"request error"];
+        [[[self mainTableView] mj_header] endRefreshing];
     }];
 }
 

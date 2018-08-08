@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "school/Main/App/Controller/SFSelectSchoolTypeViewController.m"
-            timestampString = "555323554.339892"
+            timestampString = "555404029.6805511"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
             landmarkName = "-requestSchoolType"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,28 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "school/Main/App/Controller/SFSelectSchoolViewController.m"
-            timestampString = "555323554.340045"
+            timestampString = "555404029.680653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
             landmarkName = "-requestSchool"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "school/Main/App/Controller/SFSelectSchoolTypeViewController.m"
-            timestampString = "555323554.340431"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "-tableView:didSelectRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -105,76 +89,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "school/Main/App/Controller/SFSelectSchoolViewController.m"
-            timestampString = "555323554.340565"
+            filePath = "school/Main/App/Controller/SFHomeViewController.m"
+            timestampString = "555404029.680759"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "70"
-            endingLineNumber = "70"
-            landmarkName = "-requestSchool"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SFSelectSchoolViewController requestSchool]"
-                  moduleName = "school"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olivermac/Desktop/banana/school/school/Main/App/Controller/SFSelectSchoolViewController.m"
-                  timestampString = "555323554.493279"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "171">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__45-[SFSelectSchoolViewController requestSchool]_block_invoke"
-                  moduleName = "school"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olivermac/Desktop/banana/school/school/Main/App/Controller/SFSelectSchoolViewController.m"
-                  timestampString = "555323554.496053"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "72"
-                  endingLineNumber = "72"
-                  offsetFromSymbolStart = "91">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__destroy_helper_block_"
-                  moduleName = "school"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/olivermac/Desktop/banana/school/school/Main/App/Controller/SFSelectSchoolViewController.m"
-                  timestampString = "555323554.498491"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "school/Main/App/Controller/SFSelectSchoolViewController.m"
-            timestampString = "555323554.340853"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-requestSchool"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "-loadSchool"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

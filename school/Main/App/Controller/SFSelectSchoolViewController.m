@@ -9,6 +9,7 @@
 #import "SFSelectSchoolViewController.h"
 #import "SFHttpApiGetSchoolList.h"
 #import "SFSchoolModel.h"
+#import "SFAppManager.h"
 
 @interface SFSelectSchoolViewController ()
 
@@ -84,10 +85,12 @@
             }
         }
         
+        [[[self mainTableView] mj_header] endRefreshing];
         [[self mainTableView] reloadData];
     } withProgress:nil withError:^(NSError *error) {
         
         [SFNotice showHUDError:@"[SFHttpApiGetSchoolList] request error"];
+        [[[self mainTableView] mj_header] endRefreshing];
     }];
 }
 
@@ -114,6 +117,18 @@
     
     //发送通知通知homevc更改学校并获取新的信息
     //直接显示homevc 并获取新的学校信息
+    NSNumber *schoolId = [[[self schoolList] objectAtIndex:[indexPath row]] id];
+    [[SFAppManager shared] setSf_school:schoolId];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"SF_CHOOSED_SCHOOL_CHANGED" object:nil];
+    [self meQuit];
+}
+
+- (void)meQuit {
+    
+    [self dismissViewControllerAnimated:1 completion:^{
+        //do something here.
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

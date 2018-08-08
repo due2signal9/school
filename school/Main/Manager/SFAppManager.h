@@ -11,6 +11,7 @@
 @interface SFAppManager : NSObject
 
 @property(nonatomic, weak) UIWindow *keyWindow;
+@property(copy, nonatomic) NSNumber *sf_school;
 
 + (SFAppManager *)shared;
 + (void)setup;

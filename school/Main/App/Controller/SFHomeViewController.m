@@ -21,14 +21,28 @@
     // Do any additional setup after loading the view.
     
     [self setTitle:SFLocalizedString(@"SCHOOL_NOT_SELECTED")];
+    
     //[self initSubviews];
     //[self setupSubviews];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSchool) name:@"SF_CHOOSED_SCHOOL_CHANGED" object:nil];
+    [self loadSchool];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
+- (void)loadSchool {
     
-    SFSelectSchoolTypeViewController *tvc = [[SFSelectSchoolTypeViewController alloc] init];
-    [[self navigationController] pushViewController:tvc animated:1];
+    NSNumber *choosedSchool = [[NSUserDefaults standardUserDefaults] objectForKey:@"SF_CHOOSED_SCHOOL"];
+    if ([choosedSchool integerValue]) {
+        
+        NSLog(@"SCHOOL CHOOSED SUCCESS!!!");
+    } else {
+        
+        SFSelectSchoolTypeViewController *tvc = [[SFSelectSchoolTypeViewController alloc] init];
+        SFNavigationController *nav = [[SFNavigationController alloc] initWithRootViewController:tvc];
+        [[self navigationController] presentViewController:nav animated:1 completion:^{
+            //doing something
+            
+        }];
+    }
 }
 
 - (void)initSubviews {

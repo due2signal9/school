@@ -26,6 +26,24 @@ static SFAppManager *_instance = nil;
     return _instance;
 }
 
+- (instancetype)init {
+    
+    self = [super init];
+    NSNumber *choosedSchool = [[NSUserDefaults standardUserDefaults] objectForKey:@"SF_CHOOSED_SCHOOL"];
+    if ([choosedSchool intValue])
+        self->_sf_school = choosedSchool;
+    else
+        self->_sf_school = [NSNumber numberWithInteger:0];
+    return self;
+}
+
+- (void)setSf_school:(NSNumber *)sf_school {
+    
+    self->_sf_school = sf_school;
+    [[NSUserDefaults standardUserDefaults] setObject:sf_school forKey:@"SF_CHOOSED_SCHOOL"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 + (void)setup {
     
     UIWindow *window = [[UIApplication sharedApplication] keyWindow];
@@ -36,6 +54,8 @@ static SFAppManager *_instance = nil;
 
 - (void)loadRootViewController
 {
+    
+    //NSNumber *choosedSchool = [[NSUserDefaults standardUserDefaults] objectForKey:@"SF_CHOOSED_SCHOOL"];
     
     SFTabBarController *hRoot = [[SFTabBarController alloc] init];
     [[self keyWindow] setRootViewController:hRoot];
