@@ -10,4 +10,7 @@
 
 @interface SFMineHeadView : UIView
 
+@property(strong, nonatomic) UIImageView *avatar;
+@property(strong, nonatomic) UILabel *nameLabel;
+
 @end

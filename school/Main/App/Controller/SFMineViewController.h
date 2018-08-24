@@ -14,4 +14,6 @@
 @property(strong, nonatomic) SFMineHeadView *headView;
 @property(strong, nonatomic) SFTableView *mainTableView;
 
+@property(strong, nonatomic) NSArray *cellMap;
+
 @end

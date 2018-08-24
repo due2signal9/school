@@ -22,8 +22,10 @@
     
     SFHomeViewController *homeVc = [[SFHomeViewController alloc] init];
     SFNavigationController *homeNav = [[SFNavigationController alloc] initWithRootViewController:homeVc];
+    homeNav.tabBarItem.title = @"home";
     SFMineViewController *mineVc = [[SFMineViewController alloc] init];
     SFNavigationController *mineNav = [[SFNavigationController alloc] initWithRootViewController:mineVc];
+    mineNav.tabBarItem.title = @"mine";
     [self setViewControllers:@[homeNav, mineNav]];
 }
 

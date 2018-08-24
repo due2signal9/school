@@ -51,6 +51,8 @@
 		A6D6DCC0210F246D005CBBBA /* SFMineSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCBF210F246D005CBBBA /* SFMineSettingViewController.m */; };
 		A6D6DCC4210F2584005CBBBA /* SFLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCC3210F2584005CBBBA /* SFLoginViewController.m */; };
 		A6D6DCC7210F296F005CBBBA /* SFHttpApiGetHome.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D6DCC6210F296F005CBBBA /* SFHttpApiGetHome.m */; };
+		FA87F3342130084300D3CCEC /* SFFleaPostDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA87F3332130084300D3CCEC /* SFFleaPostDetailViewController.m */; };
+		FA87F33721300D1400D3CCEC /* SFMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FA87F33621300D1400D3CCEC /* SFMapManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,6 +162,10 @@
 		A6D6DCC3210F2584005CBBBA /* SFLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFLoginViewController.m; sourceTree = "<group>"; };
 		A6D6DCC5210F296F005CBBBA /* SFHttpApiGetHome.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFHttpApiGetHome.h; sourceTree = "<group>"; };
 		A6D6DCC6210F296F005CBBBA /* SFHttpApiGetHome.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFHttpApiGetHome.m; sourceTree = "<group>"; };
+		FA87F3322130084300D3CCEC /* SFFleaPostDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFFleaPostDetailViewController.h; sourceTree = "<group>"; };
+		FA87F3332130084300D3CCEC /* SFFleaPostDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFFleaPostDetailViewController.m; sourceTree = "<group>"; };
+		FA87F33521300D1400D3CCEC /* SFMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SFMapManager.h; sourceTree = "<group>"; };
+		FA87F33621300D1400D3CCEC /* SFMapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFMapManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -424,6 +430,8 @@
 				A6D6DCBF210F246D005CBBBA /* SFMineSettingViewController.m */,
 				A6D6DCC2210F2584005CBBBA /* SFLoginViewController.h */,
 				A6D6DCC3210F2584005CBBBA /* SFLoginViewController.m */,
+				FA87F3322130084300D3CCEC /* SFFleaPostDetailViewController.h */,
+				FA87F3332130084300D3CCEC /* SFFleaPostDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -433,6 +441,8 @@
 			children = (
 				A67EED39210AF2460033B250 /* SFAppManager.h */,
 				A67EED3A210AF2460033B250 /* SFAppManager.m */,
+				FA87F33521300D1400D3CCEC /* SFMapManager.h */,
+				FA87F33621300D1400D3CCEC /* SFMapManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -484,6 +494,7 @@
 				A67EECA9210ACF9D0033B250 /* Frameworks */,
 				A67EECAA210ACF9D0033B250 /* Resources */,
 				9ED798CEC9CC265B844E51BA /* [CP] Copy Pods Resources */,
+				8C9D2F454DBFC5ECFE48EFE6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -623,6 +634,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8C9D2F454DBFC5ECFE48EFE6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-school/Pods-school-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9ED798CEC9CC265B844E51BA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -690,8 +716,10 @@
 				A6D6DCB3210F0C69005CBBBA /* SFSelectSchoolViewController.m in Sources */,
 				A67EECFF210AD9BD0033B250 /* SFServer.m in Sources */,
 				A67EED46210AF8290033B250 /* SFNotice.m in Sources */,
+				FA87F3342130084300D3CCEC /* SFFleaPostDetailViewController.m in Sources */,
 				A610211E2118485800B55854 /* SFSchoolTypeModel.m in Sources */,
 				A6D6DCBA210F0F95005CBBBA /* SFHttpApiGetSchoolList.m in Sources */,
+				FA87F33721300D1400D3CCEC /* SFMapManager.m in Sources */,
 				A67EECBF210ACF9F0033B250 /* main.m in Sources */,
 				A6D6DCC7210F296F005CBBBA /* SFHttpApiGetHome.m in Sources */,
 				A67EECEB210AD37E0033B250 /* AppDelegate+SFNotify.m in Sources */,

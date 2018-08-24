@@ -24,8 +24,8 @@
     
     //[self initSubviews];
     //[self setupSubviews];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSchool) name:@"SF_CHOOSED_SCHOOL_CHANGED" object:nil];
-    [self loadSchool];
+    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loadSchool) name:@"SF_CHOOSED_SCHOOL_CHANGED" object:nil];
+    //[self loadSchool];
 }
 
 - (void)loadSchool {
